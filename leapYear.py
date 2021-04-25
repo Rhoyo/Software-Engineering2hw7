@@ -2,20 +2,27 @@
 
 #start of leap function
 def leap(year):
-    if(year%4==0):
-        if(year%100==0):
-            if(year%400==0):
-                return 0
-            else:
-                return 1
-        else:
-            return 0
-    else:
-        return 1
+#error handling		
+	if(year<0):
+		print("Invalid year")						#checking if input is negative
+		return 1
+
+
+#start computations
+	elif(year%4==0):
+		if(year%100==0):
+			if(year%400==0):
+				return 0
+			else:
+				return 1
+		else:
+			return 0
+	else:
+		return 1
 #end of leap
 
 #driver
-year = int(input("Enter year 1: "))
+year = int(input("Enter year 1: ")) 				#converts any input into an integer
 year0 = int(input("Enter year 2: "))
 
 
