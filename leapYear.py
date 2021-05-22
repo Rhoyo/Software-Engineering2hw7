@@ -1,4 +1,4 @@
-#enter in the two years as prompted, the driver code will display the results
+
 
 #start of leap function
 def leap(year):
