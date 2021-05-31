@@ -1,9 +1,12 @@
 import unittest
 import leapTDD
 
- class testLeap(unittest.TestCase):	
+class testLeap(unittest.TestCase):	
 	def test_div4(self):
 		res=leapTDD.leap(2004)
 		self.assertEqual(res, 0)
 	
+	def test_div4not100(self):
+		res=leapTDD.leap(2100)
+		self.assertEqual(res, 1)
 	
